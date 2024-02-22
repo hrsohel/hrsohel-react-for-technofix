@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #E9EAEC;
+    padding: 1rem;
+    overflow: scroll;
+}
+.container .table-container {
+    background-color: #fff;
+    border-radius: .3rem;
+    padding: 0.5rem;
+    overflow: scroll;
+    min-height: 90vh;
+}
+
+.container .table-container .table-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 100%;
+}
+.container .table-container .list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    font-size: 15px;
+    flex-direction: row;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.container .table-container .table-title .table-lists {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    width: 10rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    min-height: 100%;
+    padding: 1rem;
+    box-shadow: 0 0 .2rem #444;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+.container .table-container .table-title .table-lists div:hover {
+    background-color: #E9EAEC;
+    border-radius: 0.3rem;
+}
+.container .table-container .table-title, .container .table-container .list-title {
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .container .table-container .list-container {
+        width: 150vw;
+    }
+}
+
+@media(max-width: 500px) {
+    .container .table-container .list-container {
+        width: 300vw;
+    }
+}
